@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email App</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    
+</head>
+<body>
+    <h1>إرسال رسالة عبر البريد الالكتروني</h1>
+    <form class="container" onsubmit="SendMail(event)">
+
+        <label for="email">أدخل البريد الإلكتروني:</label>
+
+        <input type="email" id="email" placeholder="jonhduo@gamil.com">
+
+        <label for="message">اكتب رسالتك:</label>
+
+        <textarea name="message" id="message" rows="4" cols="32"></textarea>
+
+        <button type="submit" id="send-email" >إرسال البريد</button>
+    </form>
+    <!-- <div id="confirm-box"></div> -->
+
+    <script src="script.js"></script>
+
+</body>
+</html>
