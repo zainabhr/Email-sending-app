@@ -29,16 +29,19 @@ h1{
     align-items: flex-start;
     justify-content: center;
     margin: 10px;
+    direction: rtl;
 }
 
 label{
     font-size: 18px;
+    
 }
 
 input{
     width: 250px;
     height: 30px;
     margin: 10px 0 10px 0;
+    direction: ltr;
 }
 textarea{
     margin: 10px 0 10px 0;

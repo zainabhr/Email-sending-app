@@ -10,7 +10,8 @@
 </head>
 <body>
     <h1>إرسال رسالة عبر البريد الالكتروني</h1>
-    <form class="container" onsubmit="SendMail(event)">
+
+    <form class="container" id="send-email-form">
 
         <label for="email">أدخل البريد الإلكتروني:</label>
 
@@ -19,6 +20,10 @@
         <label for="message">اكتب رسالتك:</label>
 
         <textarea name="message" id="message" rows="4" cols="32"></textarea>
+
+        <label for="date">حدد وقت الإرسال</label>
+
+        <input type="time" id="send-time" >
 
         <button type="submit" id="send-email" >إرسال البريد</button>
     </form>
